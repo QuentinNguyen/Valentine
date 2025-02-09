@@ -28,7 +28,7 @@ export class LandingPageComponent implements OnInit {
 
   volumeOn = false;
   isMusicOn: boolean = false;
-  song: string = '/eyesNoseLips.mp3';
+  song: string = './eyesNoseLips.mp3';
 
   constructor( private readonly router: Router) {}
 
