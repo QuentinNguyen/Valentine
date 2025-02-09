@@ -4,11 +4,11 @@
 <div class="main-container">
   <div class="upper-page-content flx-center">
     <img class="click-here" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmRxZ3d3MDBvNHB2aHd4aGVqbDA2eXp5OXB2aW82d3pqMWx1YjBhZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YYPTi62yhByNT0MUfQ/giphy.gif">
-    <img *ngIf="volumeOn; else volumeOff" (click)="changeVolume()" src="/sound-on-svgrepo-com.svg"
+    <img *ngIf="volumeOn; else volumeOff" (click)="changeVolume()" src="/soundOn.svg"
          class="clickable"
          [ngStyle]="{'width': 30 + 'px', 'height': 30 + 'px'}">
     <ng-template #volumeOff>
-      <img (click)="changeVolume()" src="/mute-volume-svgrepo-com.svg"
+      <img (click)="changeVolume()" src="/mutevolume.svg"
            class="clickable"
            [ngStyle]="{'width': 30 + 'px', 'height': 30 + 'px'}">
     </ng-template>
